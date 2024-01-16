@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1060539842848",
+    "project_id": "memorush-2698d",
+    "storage_bucket": "memorush-2698d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060539842848:android:c5bcf3be9c17ce13d69745",
+        "android_client_info": {
+          "package_name": "com.app.memorush"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpw2scTiUvG3v4BACwlVyYPnRBFTqevfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

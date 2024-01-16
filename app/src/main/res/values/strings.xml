@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MemoRush</string>
+    <string name="memorush">MemoRush</string>
+    <string name="notes_at_the_speed_of_thought">Notes at the Speed of Thought</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm Password</string>
+</resources>

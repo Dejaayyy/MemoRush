@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purplebg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/memorushlg"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memorush"
+        android:textSize="35sp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/interexbold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notes_at_the_speed_of_thought"
+        android:textSize="15sp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/interreg"
+        android:gravity="center"/>
+
+    <ProgressBar
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminateTint="@color/black"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

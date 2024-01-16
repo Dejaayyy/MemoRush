@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purplebg"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/llg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/memorushlg"/>
+
+    <LinearLayout
+        android:id="@+id/catl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:fontFamily="@font/interexbold"
+            android:layout_marginVertical="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lgfillup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catl"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etlgemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            android:textSize="16sp"
+            android:background="@drawable/edit_text_round_corner"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsreg"/>
+
+        <EditText
+            android:id="@+id/etlgpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/create_password"
+            android:textSize="16sp"
+            android:background="@drawable/edit_text_round_corner"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsreg"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:text="Login"
+            android:fontFamily="@font/interreg"
+            android:textSize="16sp"/>
+
+        <ProgressBar
+            android:id="@+id/caprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lgfillup"
+        android:orientation="horizontal"
+        android:layout_marginVertical="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "/>
+        <TextView
+            android:id="@+id/registertv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:fontFamily="@font/interbold"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purplebg"
+    tools:context=".CreateAcc">
+
+    <ImageView
+        android:id="@+id/calg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/memorushlg"/>
+    
+    <LinearLayout
+        android:id="@+id/catl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calg"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            android:fontFamily="@font/interexbold"
+            android:layout_marginVertical="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/cafillup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catl"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"
+            android:textSize="16sp"
+            android:background="@drawable/edit_text_round_corner"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsreg"/>
+
+        <EditText
+            android:id="@+id/etpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/create_password"
+            android:textSize="16sp"
+            android:background="@drawable/edit_text_round_corner"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsreg"/>
+
+        <EditText
+            android:id="@+id/etcpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/confirm_password"
+            android:textSize="16sp"
+            android:background="@drawable/edit_text_round_corner"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsreg"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cabtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:text="Create Account"
+            android:fontFamily="@font/interreg"
+            android:textSize="16sp"/>
+
+        <ProgressBar
+            android:id="@+id/caprogressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cafillup"
+        android:orientation="horizontal"
+        android:layout_marginVertical="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? "/>
+        <TextView
+            android:id="@+id/logintv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/interbold"/>
+
+    </LinearLayout>
+    
+
+</RelativeLayout>
